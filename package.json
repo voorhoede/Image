@@ -1,0 +1,8 @@
+{
+  "name": "Image",
+  "workspaces": [
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}
