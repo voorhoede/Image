@@ -32,5 +32,6 @@ jobs:
 
       - name: Publish package
         run: npm publish --provenance
+        working-directory: ./image-vue
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
