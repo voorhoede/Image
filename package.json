@@ -1,6 +1,7 @@
 {
   "name": "Image",
   "workspaces": [
+    "image-vue"
   ],
   "engines": {
     "node": ">=20"
