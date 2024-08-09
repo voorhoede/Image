@@ -17,8 +17,8 @@
   "files": [
     "dist"
   ],
-  "exports": "./dist/image-vue-pure/Image.mjs",
-  "types": "./dist/image-vue-pure/Image.d.mts",
+  "exports": "./dist/image-vue/Image.mjs",
+  "types": "./dist/image-vue/Image.d.mts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/voorhoede/Image.git",
