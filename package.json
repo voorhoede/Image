@@ -1,5 +1,5 @@
 {
-  "name": "Image",
+  "name": "image",
   "workspaces": [
     "image-vue"
   ],
