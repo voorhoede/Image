@@ -6,6 +6,7 @@
   "scripts": {
     "prebuild": "rm --recursive --force ./dist/*",
     "build": "tsc",
+    "dev": "tsc --watch",
     "prepare": "npm run build"
   },
   "dependencies": {
