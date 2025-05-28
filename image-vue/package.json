@@ -4,6 +4,7 @@
   "description": "Optimized CDN image component",
   "type": "module",
   "scripts": {
+    "prebuild": "rm --recursive --force ./dist/*",
     "build": "tsc",
     "prepare": "npm run build"
   },
