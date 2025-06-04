@@ -1,0 +1,36 @@
+{
+  "name": "@voorhoede/image-preact",
+  "version": "1.0.1",
+  "description": "Optimized CDN image component",
+  "type": "module",
+  "scripts": {
+    "prebuild": "rm --recursive --force ./dist/*",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "preact": "^10.26.8"
+  },
+  "devDependencies": {
+    "@tsconfig/node-lts": "^20.1.3",
+    "typescript": "^5.4.5"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": "./dist/image.js",
+  "types": "./dist/image.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voorhoede/Image.git",
+    "directory": "image-preact"
+  },
+  "keywords": [
+    "preact",
+    "image",
+    "component"
+  ],
+  "author": "De Voorhoede (https://www.voorhoede.nl/)",
+  "license": "ISC"
+}

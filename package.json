@@ -1,7 +1,10 @@
 {
   "name": "image",
+  "type": "module",
   "workspaces": [
-    "image-vue"
+    "image-vue",
+    "image-preact",
+    "image-react"
   ],
   "engines": {
     "node": ">=20"
