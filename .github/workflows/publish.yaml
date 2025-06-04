@@ -36,3 +36,15 @@ jobs:
         working-directory: ./image-vue
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+
+      - name: Publish package
+        run: npm publish --provenance --access public
+        working-directory: ./image-preact
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+
+      - name: Publish package
+        run: npm publish --provenance --access public
+        working-directory: ./image-react
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
