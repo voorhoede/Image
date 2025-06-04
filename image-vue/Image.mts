@@ -42,7 +42,6 @@ export const Image = defineComponent(
             sizes: props.sizes,
           }),
         decoding: props.decoding ?? "async",
-        quality,
       });
   },
   {
