@@ -36,3 +36,7 @@ jobs:
       - name: Publish react package
         run: npm publish --access public
         working-directory: ./image-react
+
+      - name: Publish astro package
+        run: npm publish --access public
+        working-directory: ./image-astro

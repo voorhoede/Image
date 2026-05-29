@@ -5,7 +5,8 @@
   "workspaces": [
     "image-vue",
     "image-preact",
-    "image-react"
+    "image-react",
+    "image-astro"
   ],
   "engines": {
     "node": ">=20"
