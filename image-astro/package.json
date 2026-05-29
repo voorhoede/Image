@@ -1,0 +1,38 @@
+{
+  "name": "@voorhoede/image-astro",
+  "version": "1.1.0",
+  "description": "Optimized CDN image component",
+  "type": "module",
+  "scripts": {
+    "prebuild": "rm --recursive --force ./dist/*",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "astro": "^6.4.2"
+  },
+  "devDependencies": {
+    "@tsconfig/node-lts": "^20.1.3",
+    "typescript": "^5.4.5"
+  },
+  "files": [
+    "dist",
+    "Image.astro"
+  ],
+  "exports": "./Image.astro",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voorhoede/Image.git",
+    "directory": "image-astro"
+  },
+  "keywords": [
+    "astro",
+    "astro-component",
+    "withastro",
+    "image",
+    "component"
+  ],
+  "author": "De Voorhoede (https://www.voorhoede.nl/)",
+  "license": "ISC"
+}

@@ -1,0 +1,50 @@
+---
+import type { HTMLAttributes } from "astro/types";
+import { generateSrcSet } from "./dist/generate-src-set.mjs";
+import type { ImageLoader } from "./dist/types.mjs";
+
+export type { ImageLoader } from "./dist/types.mjs";
+
+type Props = HTMLAttributes<"img"> & {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  loader?: ImageLoader;
+  /** Quality passed to the loader (defaults to 45) */
+  quality?: number;
+};
+
+const {
+  src,
+  alt,
+  width,
+  height,
+  loading = "lazy",
+  sizes,
+  srcset,
+  decoding = "async",
+  loader = ({ src }: { src: string }) => src,
+  quality = 45,
+  ...rest
+} = Astro.props;
+---
+
+<img
+  src={src}
+  alt={alt}
+  width={width}
+  height={height}
+  loading={loading}
+  sizes={sizes}
+  srcset={srcset ||
+    generateSrcSet({
+      loader,
+      src,
+      width,
+      quality,
+      sizes,
+    })}
+  decoding={decoding}
+  {...rest}
+/>
